@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SkillMatch RH: encontre os candidatos mais compatíveis com sua vaga.">
+  <meta name="theme-color" content="#101827">
+  <title>SkillMatch RH | Recrutamento inteligente</title>
+  <link rel="stylesheet" href="./assets/styles/index.style.css">
+  <script type="module" src="./assets/scripts/main.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SkillMatch RH - página inicial">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span>skillmatch<span class="brand-light">.rh</span></span>
+    </a>
+    <span class="topbar-label"><span class="status-dot"></span> Painel de recrutamento</span>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">RECRUTAMENTO MAIS INTELIGENTE</p>
+        <h1 id="page-title">Encontre o talento <span>certo para sua equipe.</span></h1>
+        <p class="hero-description">Cadastre uma vaga, compare competências e descubra quem está mais perto do perfil que você procura.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-symbol">✳</div>
+        <div class="floating-card card-top">MATCH <strong>+92%</strong></div>
+        <div class="floating-card card-bottom"><span class="mini-avatar">RH</span> Talento em destaque</div>
+      </div>
+    </section>
+
+    <section class="workspace" aria-label="Cadastro da vaga e análise de candidatos">
+      <section class="panel form-panel" aria-labelledby="form-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ETAPA 01</p>
+            <h2 id="form-title">Configure sua vaga</h2>
+          </div>
+          <span class="step-number">01</span>
+        </div>
+        <p class="muted">Informe os detalhes para iniciar a busca pelo candidato ideal.</p>
+
+        <form id="job-form" novalidate>
+          <div class="field">
+            <label for="cargo">Nome do cargo</label>
+            <input id="cargo" name="cargo" type="text" placeholder="Ex.: Desenvolvedor Front-End" required>
+          </div>
+          <div class="field">
+            <label for="area">Área profissional</label>
+            <select id="area" name="area" required>
+              <option value="">Selecione uma área</option>
+              <option value="Tecnologia">Tecnologia</option>
+              <option value="Design">Design</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Administrativo">Administrativo</option>
+              <option value="Recursos Humanos">Recursos Humanos</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="requisitos">Requisitos e habilidades</label>
+            <textarea id="requisitos" name="requisitos" rows="4" placeholder="Digite as habilidades separadas por vírgula. Ex.: HTML, CSS, JavaScript" required></textarea>
+            <small>Separe cada requisito por vírgula.</small>
+          </div>
+          <div class="field">
+            <label for="experiencia">Experiência mínima (em meses)</label>
+            <input id="experiencia" name="experiencia" type="number" min="0" value="0" required>
+          </div>
+          <p id="form-feedback" class="feedback" role="alert" aria-live="polite"></p>
+          <button class="primary-button" type="submit">Analisar candidatos <span aria-hidden="true">→</span></button>
+        </form>
+      </section>
+
+      <section class="panel results-panel" aria-labelledby="results-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">ETAPA 02</p>
+            <h2 id="results-title">Compatibilidade</h2>
+          </div>
+          <span class="step-number">02</span>
+        </div>
+        <div id="job-summary" class="job-summary">
+          <span class="summary-icon" aria-hidden="true">✦</span>
+          <div><strong>Sua próxima contratação começa aqui</strong><p>Preencha a vaga ao lado para comparar os perfis.</p></div>
+        </div>
+        <div id="results-status" class="empty-state" aria-live="polite">
+          <div class="empty-icon" aria-hidden="true">◎</div>
+          <h3>Aguardando sua vaga</h3>
+          <p>Os candidatos aparecerão aqui, organizados pelo nível de compatibilidade.</p>
+        </div>
+        <div id="best-candidate" class="best-candidate" hidden></div>
+        <div id="candidate-list" class="candidate-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>SkillMatch RH</span>
+    <span>Conectando competências a oportunidades.</span>
+  </footer>
+</body>
+</html>

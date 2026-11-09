@@ -1,0 +1,84 @@
+[
+  {
+    "id": 1,
+    "nome": "Ana Martins",
+    "area": "Tecnologia",
+    "habilidades": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Git"
+    ],
+    "experienciaMeses": 18,
+    "cidade": "Joinville"
+  },
+  {
+    "id": 2,
+    "nome": "Bruno Costa",
+    "area": "Tecnologia",
+    "habilidades": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Git"
+    ],
+    "experienciaMeses": 30,
+    "cidade": "Florianópolis"
+  },
+  {
+    "id": 3,
+    "nome": "Camila Rocha",
+    "area": "Tecnologia",
+    "habilidades": [
+      "HTML",
+      "CSS",
+      "Figma",
+      "Git"
+    ],
+    "experienciaMeses": 12,
+    "cidade": "Joinville",
+    "tipo": "estagio",
+    "curso": "Desenvolvimento Web"
+  },
+  {
+    "id": 4,
+    "nome": "Diego Almeida",
+    "area": "Tecnologia",
+    "habilidades": [
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "Git"
+    ],
+    "experienciaMeses": 42,
+    "cidade": "Curitiba"
+  },
+  {
+    "id": 5,
+    "nome": "Eduarda Lima",
+    "area": "Design",
+    "habilidades": [
+      "Figma",
+      "HTML",
+      "CSS",
+      "UX"
+    ],
+    "experienciaMeses": 24,
+    "cidade": "Joinville"
+  },
+  {
+    "id": 6,
+    "nome": "Felipe Santos",
+    "area": "Tecnologia",
+    "habilidades": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Git",
+      "Acessibilidade"
+    ],
+    "experienciaMeses": 36,
+    "cidade": "São Paulo"
+  }
+]
