@@ -21,8 +21,8 @@ export function configurarFormulario(aoEnviar) {
       !cargo ||
       !area ||
       requisitos.length === 0 ||
-      !Number.isFinite(experienciaMinimaMeses) ||
-      experienciaMinimaMeses < 0
+     !Number.isInteger(experienciaMinimaMeses) ||
+experienciaMinimaMeses < 0
     ) {
       feedback.textContent =
         "Preencha o cargo, a área, ao menos um requisito e uma experiência válida.";
