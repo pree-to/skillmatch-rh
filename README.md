@@ -1,40 +1,39 @@
-# SkillMatch RH
+## Como executar o projeto
 
-Aplicação web estática para apoiar o recrutamento: o RH cadastra uma vaga e o sistema compara seus requisitos com as habilidades de candidatos cadastrados em um arquivo JSON.
+1. Clone o repositório:
+   `git clone https://github.com/pree-to/skillmatch-rh.git`
+2. Abra a pasta `skillmatch-rh` no Visual Studio Code.
+3. Execute o arquivo `index.html` utilizando a extensão Live Server.
+4. Acesse a aplicação pelo navegador.
 
-## Tecnologias
-- HTML5 semântico e acessível
-- CSS3 com Flexbox e layout responsivo
-- JavaScript puro com módulos ES
-- Fetch API e async/await para carregar os candidatos
-- LocalStorage para salvar e recuperar a última vaga analisada
+## Estrutura do projeto
 
-## Como executar
-1. Abra a pasta do projeto no Visual Studio Code.
-2. Inicie a extensão **Live Server** pelo arquivo `index.html`.
-3. A aplicação será aberta no navegador. Não abra o HTML diretamente pelo sistema de arquivos, pois o projeto carrega o JSON com `fetch`.
+- `index.html`: estrutura da aplicação.
+- `assets/dados/candidatos.json`: banco de candidatos.
+- `assets/scripts/main.js`: inicialização e eventos principais.
+- `assets/scripts/dados.js`: carregamento dos dados.
+- `assets/scripts/motor.js`: lógica de compatibilidade.
+- `assets/scripts/ui.js`: atualização da interface.
+- `assets/styles/index.style.css`: estilos e responsividade.
+- `assets/img/logo.svg`: identidade visual.
 
-## Como utilizar
-1. Informe o cargo e selecione a área profissional.
-2. Digite os requisitos separados por vírgulas (por exemplo: `HTML, CSS, JavaScript, Git`).
-3. Informe a experiência mínima em meses.
-4. Clique em **Analisar candidatos**.
-5. Confira o ranking, o percentual de compatibilidade, os requisitos atendidos e os pontos de desenvolvimento sugeridos.
+## Funcionalidades
 
-## Regras de compatibilidade
-O percentual considera a proporção de requisitos da vaga atendidos pelo candidato: requisitos atendidos divididos pelo total de requisitos, multiplicado por 100. A classificação é Alta (80% a 100%), Média (50% a 79%) ou Baixa (0% a 49%). Em caso de empate, o candidato com maior experiência aparece primeiro. A experiência mínima também é sinalizada nos resultados.
+- Cadastro de vagas e requisitos.
+- Comparação entre requisitos e habilidades.
+- Cálculo de compatibilidade percentual.
+- Classificação dos candidatos.
+- Identificação do melhor candidato.
+- Recomendação de habilidades para desenvolvimento.
 
-## Estrutura
-- `index.html`: estrutura e formulário da aplicação.
-- `assets/styles/index.style.css`: identidade visual, Flexbox e responsividade.
-- `assets/scripts/main.js`: inicialização e integração dos módulos.
-- `assets/scripts/dados.js`: carregamento do JSON e persistência no LocalStorage.
-- `assets/scripts/motor.js`: classes, herança, cálculo e classificação de compatibilidade.
-- `assets/scripts/ui.js`: eventos, validação e criação dinâmica dos resultados no DOM.
-- `assets/dados/candidatos.json`: banco fictício com seis candidatos.
+## Tecnologias utilizadas
 
-## Programação JavaScript aplicada
-O projeto utiliza arrays e objetos, `map`, `filter` e `reduce`, classes e herança, callback, closure, eventos, manipulação do DOM, Fetch API, tratamento de erros e LocalStorage.
+- HTML5
+- CSS3
+- JavaScript ES6+
+- JSON
+- Git e GitHub
 
-## Observação
-Os dados dos candidatos são fictícios e utilizados exclusivamente para fins acadêmicos.
+## Execução dos testes
+
+A aplicação foi testada localmente com Live Server, incluindo cadastro de vaga, comparação de candidatos e validação da experiência mínima.
